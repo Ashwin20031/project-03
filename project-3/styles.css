@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-image: url("./images/andrew-schultz-EAlbsTo6nuQ-unsplash.jpg");
+    background-size: cover;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    background: transparent;
+    backdrop-filter: blur(30px) brightness(80%);
+}
+
+form{
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 2rem;
+}
+button{
+    padding: 1rem 3.5rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: rgb(7, 161, 110)!important;
+    box-shadow: 2px 5px 10px rgba(128, 128, 128, 0.758);
+}
+
+.input{
+    display: flex;
+    align-items:flex-start;
+    
+    gap: 1rem;
+}
+
+input,textarea,select{
+    width: 20rem;
+    padding: 0.8rem;
+    color: rgb(15, 198, 152)!important;
+    /* background-color: rgb(217, 217, 217); */
+}
+input:focus,select:focus{
+    border: 3px solid rgb(15, 198, 152) ;
+    outline: none;
+}
+
+option{
+
+    color: rgb(15, 198, 152)!important;
+}
+select{
+    width: 20rem;
+    padding: 0.8rem;
+}
+
+
+
+.dark{
+    background-color: rgb(15, 198, 152);
+    color:white ;
+}
+h2{
+    color: rgb(15, 198, 152);
+}
+
+@media(min-width:220px)  and (max-width:600px){
+  .input{
+    flex-direction: column;
+  }
+  .bu{
+    flex-direction: row;
+  }
+}
+
